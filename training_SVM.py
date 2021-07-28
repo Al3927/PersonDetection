@@ -38,7 +38,7 @@ Classification with SVM
 
 """)
 
-model = LinearSVC()
+model = LinearSVC(dual = True)
 print('Training...... Support Vector Machine')
 model.fit(train_data,train_labels)
 joblib.dump(model, 'models/models.dat')
